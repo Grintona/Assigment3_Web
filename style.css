@@ -1,0 +1,57 @@
+
+.why {
+  padding: 30px 15px;
+  background: #0b1026;
+}
+
+.why-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px;
+}
+
+.why-item {
+  background: #161d3d;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #2d3a7a;
+}
+
+
+@media (min-width: 768px) {
+  .why-list {
+    grid-template-columns: repeat(2, 1fr);   /* 2 колонки */
+    gap: 20px;
+  }
+
+  .why-title {
+    font-size: 32px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .why {
+    padding: 60px 80px;        /* больше отступы */
+  }
+
+  .why-list {
+    grid-template-columns: repeat(3, 1fr);   /* 3 колонки */
+    gap: 30px;
+  }
+
+  .why-title {
+    font-size: 42px;           /* больше заголовок */
+    text-align: left;          /* меняется выравнивание */
+  }
+
+  .why-item {
+    padding: 25px;
+  }
+}
